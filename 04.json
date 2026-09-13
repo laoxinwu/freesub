@@ -3,9 +3,10 @@
   "sites": [
     {
       "key": "drpy_bokan",
-      "name": "🎧博看听书[js]",
+      "name": "🎧博看听书[js]（已实机通过）",
       "type": 3,
       "viewType": 1,
+      "playerType": 2,
       "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
       "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/%E5%8D%9A%E7%9C%8B%E5%90%AC%E4%B9%A6.js",
       "searchable": 1,
@@ -14,13 +15,26 @@
       "changeable": 0
     },
     {
-      "key": "drpy_xsmp3",
-      "name": "🎧相声随身听[js]",
+      "key": "drpy_youshengtingshu",
+      "name": "🎧有声听书网[js]（候选）",
       "type": 3,
       "viewType": 1,
       "playerType": 2,
-      "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-      "ext": "https://raw.githubusercontent.com/laoxinwu/freesub/main/rules/xsmp3.js",
+      "api": "https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/libs/drpy.min.js",
+      "ext": "https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/js/%E6%9C%89%E5%A3%B0%E5%90%AC%E4%B9%A6%E7%BD%91.js",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "drpy_youshenghuiben",
+      "name": "🎧有声绘本网[js]（候选）",
+      "type": 3,
+      "viewType": 1,
+      "playerType": 2,
+      "api": "https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/libs/drpy.min.js",
+      "ext": "https://cdn.jsdelivr.net/gh/yxcqr/DZDRPY@main/js/%E6%9C%89%E5%A3%B0%E7%BB%98%E6%9C%AC%E7%BD%91.js",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 1,

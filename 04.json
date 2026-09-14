@@ -1,11 +1,11 @@
 {
   "cache_time": 7200,
-  "spider": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/Yoursmile.jar;md5;c6aaf6a9498e1e1d07126779c687bdd8",
-  "notice": "PZTV 04 YouTube 专仓：csp_Youtube 独立播放配置；播放链路强制走客户端 proxy 规则，避免 googlevideo 直连导致播放卡在加载中。",
+  "spider": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/Yoursmile.jar",
+  "notice": "PZTV 04 YouTube 5.3.2：播放链路重构。使用当前上游 Yoursmile JAR + 远程 YouTube cookie + proxy/CDN 规则；目标是修复搜索正常但播放阶段 0.00/0.00 持续加载。",
   "sites": [
     {
       "key": "youtube",
-      "name": "⚡YouTube（油管）",
+      "name": "⚡YouTube（油管｜播放增强）",
       "type": 3,
       "api": "csp_Youtube",
       "searchable": 1,
@@ -17,7 +17,7 @@
       },
       "ext": {
         "json": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/youtube.json",
-        "cookie": "",
+        "cookie": "https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/youtubecookie.json",
         "proxy": "proxy",
         "type": "直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
         "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",

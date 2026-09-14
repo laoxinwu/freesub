@@ -1,11 +1,11 @@
 {
   "cache_time": 7200,
-  "spider": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/Yoursmile.jar",
-  "notice": "PZTV 04 YouTube 5.3.2：播放链路重构。使用当前上游 Yoursmile JAR + 远程 YouTube cookie + proxy/CDN 规则；目标是修复搜索正常但播放阶段 0.00/0.00 持续加载。",
+  "spider": "https://raw.githubusercontent.com/cluntop/tvbox/main/pg.jar",
+  "notice": "PZTV 04 YouTube 5.3.3：切换至当前 PG/JAR 播放链路；远程 tokenm + youtube.json，优先验证无需本地伴随文件的单 04.json 模式。",
   "sites": [
     {
       "key": "youtube",
-      "name": "⚡YouTube（油管｜播放增强）",
+      "name": "⚡YouTube（PG播放引擎）",
       "type": 3,
       "api": "csp_Youtube",
       "searchable": 1,
@@ -16,33 +16,16 @@
         "ratio": 1.77
       },
       "ext": {
-        "json": "https://raw.githubusercontent.com/yoursmile66/TVBox/main/json/youtube.json",
-        "cookie": "https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/json/youtubecookie.json",
-        "proxy": "proxy",
+        "token": "https://raw.githubusercontent.com/cluntop/tvbox/main/lib/tokenm.json",
+        "json": "https://raw.githubusercontent.com/cluntop/tvbox/main/lib/youtube.json",
         "type": "直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
         "keywords": "排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
         "codecs": "",
+        "proxy": "proxy",
         "danmu": true
       },
       "timeout": 120
     }
   ],
-  "rules": [
-    {
-      "name": "proxy",
-      "hosts": [
-        "raw.githubusercontent.com",
-        "youtube.com",
-        "www.youtube.com",
-        "m.youtube.com",
-        "youtubei.googleapis.com",
-        "googlevideo.com",
-        "*.googlevideo.com",
-        "ytimg.com",
-        "*.ytimg.com",
-        "googleusercontent.com",
-        "*.googleusercontent.com"
-      ]
-    }
-  ]
+  "rules": []
 }
